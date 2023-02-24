@@ -17,19 +17,21 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $res = curl_exec($ch);
-$data = json_decode($res,false);
+// $data = json_decode($res,false);
+$json = json_encode($res);
+
 curl_close($ch);
 
 
 // 結果表示
-for($i = 0; $i < count($data->results->shop); $i++){
-    echo $i." 店名: ".$data->results->shop[$i]->name.'<br>';
-    echo "住所: ".$data->results->shop[$i]->address.'<br>';
-    echo "交通アクセス: ".$data->results->shop[$i]->access.'<br>';
-    echo "営業時間: ".$data->results->shop[$i]->open.'<br>';
-    echo "店休日: ".$data->results->shop[$i]->close.'<br>';
-    echo "最寄り駅: ".$data->results->shop[$i]->station_name.'<br>';
-}
+// for($i = 0; $i < count($data->results->shop); $i++){
+//     echo $i." 店名: ".$data->results->shop[$i]->name.'<br>';
+//     echo "住所: ".$data->results->shop[$i]->address.'<br>';
+//     echo "交通アクセス: ".$data->results->shop[$i]->access.'<br>';
+//     echo "営業時間: ".$data->results->shop[$i]->open.'<br>';
+//     echo "店休日: ".$data->results->shop[$i]->close.'<br>';
+//     echo "最寄り駅: ".$data->results->shop[$i]->station_name.'<br>';
+// }
 
 
 
