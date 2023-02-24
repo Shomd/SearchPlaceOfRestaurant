@@ -9,10 +9,6 @@
     <link rel="stylesheet" type="text/css" href="../css/result.css">
   </head>
   <body>
-    <section>
-      
-    </section>
-
   <div class="container" id="container">
     
   </div>
