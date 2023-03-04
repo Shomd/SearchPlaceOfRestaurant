@@ -32,7 +32,3 @@ curl_close($ch);
 //     echo "店休日: ".$data->results->shop[$i]->close.'<br>';
 //     echo "最寄り駅: ".$data->results->shop[$i]->station_name.'<br>';
 // }
-
-
-
-?>
